@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RSA &amp; Shor — An Interactive Cryptography Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div class="app">
+
+    <!-- LEFT RAIL -->
+    <aside class="rail">
+      <div class="brand">
+        <div class="kicker">SENAI / CIMATEC University</div>
+        <h1>RSA &amp; Shor's Algorithm</h1>
+        <div class="by">An interactive walkthrough by <b>Jullyano Lino</b></div>
+        <div class="by inst">Intro to Cybersecurity &middot; SENAI/CIMATEC University</div>
+      </div>
+      <div class="rail-label">Chapters</div>
+      <div id="rail-chapters"></div>
+      <div class="rail-foot">
+        <span class="pill">SENAI/CIMATEC University</span><br>
+        Drag the stage to orbit · use the sliders to experiment · ← → to step through.
+      </div>
+    </aside>
+
+    <!-- CENTER STAGE -->
+    <section class="stage">
+      <canvas id="scene-canvas"></canvas>
+      <div class="stage-overlay">
+        <div class="stage-spacer"></div>
+        <div class="stage-readout" id="scene-readout"></div>
+        <div class="stage-legend" id="stage-legend"></div>
+      </div>
+      <div class="scene-controls">
+        <button id="sc-replay">↺ Replay</button>
+        <span class="sep"></span>
+        <button id="sc-play" class="primary">⏸ Pause</button>
+      </div>
+    </section>
+
+    <!-- RIGHT PANEL -->
+    <section class="panel" id="panel"></section>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="./js/crypto.js"></script>
+  <script src="./js/scenes.js"></script>
+  <script src="./js/content.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
